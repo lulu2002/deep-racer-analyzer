@@ -1,5 +1,5 @@
 <template>
-  <Block section-title="圖表分析">
+  <Block section-title="圖表分析" icon-name="chart-bar">
     <img src="assets/chart.png">
   </Block>
 </template>

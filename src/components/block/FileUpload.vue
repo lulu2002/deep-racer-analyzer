@@ -1,5 +1,5 @@
 <template>
-  <Block section-title="上傳檔案">
+  <Block section-title="上傳檔案" icon-name="upload">
 
   </Block>
 </template>
