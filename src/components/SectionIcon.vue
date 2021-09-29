@@ -11,7 +11,7 @@
 export default {
   name: "SectionIcon",
   props: {
-    iconName: String
+    iconName: String,
   }
 };
 </script>
