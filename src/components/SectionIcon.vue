@@ -1,5 +1,8 @@
 <template>
-  <div class="bg-blue-300 icon-round-size rounded-full flex items-center justify-center">
+  <div
+      class="icon-round-size rounded-full flex items-center justify-center"
+      :style="{backgroundColor: bgColor}"
+  >
     <font-awesome-icon
         :icon="iconName"
         class="text-white icon-size"
@@ -12,6 +15,7 @@ export default {
   name: "SectionIcon",
   props: {
     iconName: String,
+    bgColor: String
   }
 };
 </script>

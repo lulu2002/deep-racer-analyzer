@@ -2,7 +2,10 @@
   <div class="p-3">
     <div class="bg-white rounded-lg pb-3shadow-sm">
       <div class="px-5 py-3 flex items-center">
-        <section-icon :icon-name="iconName" class="mr-4"></section-icon>
+        <section-icon
+            :icon-name="iconName"
+            :bg-color="color"
+            class="mr-4"/>
         <p class="text-xl font-semibold">{{ this.sectionTitle }}</p>
       </div>
       <div class="border-t w-full"></div>
@@ -21,10 +24,13 @@ export default {
   components: {SectionIcon},
   props: {
     sectionTitle: String,
-    iconName: String
+    iconName: String,
+    lightIconColor: Boolean
   },
-  mounted() {
-    console.log(this.iconName);
+  computed: {
+    color: function () {
+      return this.lightIconColor ? "#51CBFF" : "#017EFA";
+    }
   }
 };
 </script>

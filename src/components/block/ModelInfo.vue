@@ -1,5 +1,5 @@
 <template>
-  <Block section-title="資訊" icon-name="info">
+  <Block section-title="資訊" icon-name="info" light-icon-color>
 
   </Block>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <Block section-title="關於分析器" icon-name="user">
+  <Block section-title="關於分析器" icon-name="user" light-icon-color>
     <div>
       <p class="mb-1">分析器由 @lulu2002 製作</p>
       <p>

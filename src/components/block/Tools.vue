@@ -1,5 +1,5 @@
 <template>
-  <Block section-title="工具" icon-name="cog">
+  <Block section-title="工具" icon-name="cog" light-icon-color>
 
   </Block>
 </template>
