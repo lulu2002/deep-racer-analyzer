@@ -1,6 +1,7 @@
 import {createApp} from 'vue';
 import App from './App.vue';
 import './assets/tailwind.css';
+import './assets/style.css';
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 import {library} from "@fortawesome/fontawesome-svg-core";
 import {faChartBar, faChartPie, faCog, faInfo, faUpload, faUser} from "@fortawesome/free-solid-svg-icons";
