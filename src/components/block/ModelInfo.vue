@@ -1,22 +1,19 @@
 <template>
   <Block section-title="資訊" icon-name="info" light-icon-color>
-    <div class="py-3 px-2 flex items-center" style="background-color: #FAFAFA">
-      <div class="w-4/12">
-        <p class="app-text-bold">模型</p>
-      </div>
-      <div class="w-8/12">
-        <p class="app-text-bold">19-4m0d15a21-anser-fine-fine15</p>
-      </div>
-    </div>
+    <info-row class="mb-4" k="模型" value="19-4m0d15a21-anser-fine-fine15"/>
+    <info-row class="mb-4" k="賽道" value="Re:Invent 2019"/>
+    <info-row class="mb-4" k="相機" value="單鏡頭 | 多鏡頭"/>
+    <info-row class="mb-4" k="賽事種類" value="時間賽 | 避障賽 | 追逐賽"/>
   </Block>
 </template>
 
 <script>
 import Block from "@/components/Block";
+import InfoRow from "@/components/row/InfoRow";
 
 export default {
   name: "ModelInfo",
-  components: {Block}
+  components: {InfoRow, Block}
 };
 </script>
 
