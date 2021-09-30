@@ -7,7 +7,7 @@
 
       <div class="ml-3.5">
         <p class="font-semibold">點我上傳檔案</p>
-        <p class="text-desc">檔案大小: 20M | 上傳進度: 100%</p>
+        <p class="app-text-desc">檔案大小: 20M | 上傳進度: 100%</p>
       </div>
     </div>
   </Block>
