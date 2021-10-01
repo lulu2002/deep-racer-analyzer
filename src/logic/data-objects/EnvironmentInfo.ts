@@ -29,7 +29,7 @@ interface EnvironmentInfo {
     readonly IS_CONTINUOUS: boolean;
     readonly OFF_TRACK_PENALTY: number;
     readonly MODEL_METADATA_FILE_S3_KEY: string[];
-    readonly SENSOR: SensorType
+    SENSOR: SensorType
 }
 
 export default EnvironmentInfo

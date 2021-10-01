@@ -8,10 +8,13 @@
       </div>
 
       <div class="w-4/12">
-        <file-upload @upload="this.app.upload($event.target.files[0])"/>
-        <model-info :result="currentResult"></model-info>
-        <tools></tools>
-        <about></about>
+        <file-upload
+            @upload="this.app.upload($event.target.files[0])"
+            :analysisState="app.analysingState"
+        />
+        <model-info :result="currentResult"/>
+        <tools/>
+        <about/>
       </div>
     </app-view>
   </div>
@@ -56,5 +59,9 @@ export default {
 <style>
 .background {
   background-color: #F8F9FF;
+}
+
+.row-icon {
+  @apply mr-1.5
 }
 </style>

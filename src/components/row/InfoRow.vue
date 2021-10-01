@@ -1,10 +1,11 @@
 <template>
   <row :margin-bottom="computeMargin">
-    <div class="w-4/12 pl-3">
+    <div class="w-5/12 pl-3 flex">
+      <slot name="icon"/>
       <p class="app-text-bold"> {{ k }}</p>
     </div>
-    <div class="w-8/12">
-      <p class="app-text-bold"> {{ value }}</p>
+    <div class="w-7/12 app-text-bold text-left">
+      <slot name="row-value"></slot>
     </div>
   </row>
 </template>
@@ -17,8 +18,7 @@ export default {
   name: "InfoRow",
   components: {Row},
   props: {
-    k: String,
-    value: String
+    k: String
   }
 };
 </script>
