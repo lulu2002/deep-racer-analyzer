@@ -3,7 +3,7 @@ import AnalysisResult from "../data-objects/AnalysisResult";
 class Database {
 
     private history: AnalysisResult[] = []
-    private current?: AnalysisResult = null
+    private current: AnalysisResult | undefined = undefined
 
     pushResult(result: AnalysisResult) {
         this.history.push(result)

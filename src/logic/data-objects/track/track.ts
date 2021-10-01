@@ -1,4 +1,4 @@
-import {Coords} from '../coords';
+import Coords from "@/logic/data-objects/Coords";
 
 class Track {
     public readonly name: string;

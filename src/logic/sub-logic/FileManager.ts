@@ -1,5 +1,7 @@
 import UnZippedFile from "../data-objects/UnZippedFile";
+// @ts-ignore
 import * as browserUntar from 'browser-untar';
+// @ts-ignore
 import * as pako from 'pako/index.js';
 
 class FileManager {

@@ -26,6 +26,7 @@ import FileUpload from "@/components/block/FileUpload";
 import ModelInfo from "@/components/block/ModelInfo";
 import Tools from "@/components/block/Tools";
 import About from "@/components/block/About";
+import App from "@/logic/App";
 
 export default {
   name: 'App',
@@ -41,6 +42,7 @@ export default {
   },
   data() {
     return {
+      app: new App()
     };
   }
 };
