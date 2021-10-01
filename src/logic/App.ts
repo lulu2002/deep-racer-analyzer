@@ -17,6 +17,8 @@ class App {
 
         this.database.pushResult(result)
         this.database.setCurrent(result)
+
+        console.log(result)
     }
 }
 

@@ -6,6 +6,7 @@
       </div>
 
       <div class="ml-3.5">
+        <input type="file">
         <p class="font-semibold">點我上傳檔案</p>
         <p class="app-text-desc">檔案大小: 20M | 上傳進度: 100%</p>
       </div>
@@ -18,7 +19,10 @@ import Block from "@/components/Block";
 
 export default {
   name: "FileUpload",
-  components: {Block}
+  components: {Block},
+  emits: {
+    upload: null
+  }
 };
 </script>
 
