@@ -13,6 +13,7 @@
 import Row from "@/components/row/Row";
 
 export default {
+  extends: Row,
   name: "InfoRow",
   components: {Row},
   props: {

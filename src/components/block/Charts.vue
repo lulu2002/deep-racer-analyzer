@@ -1,6 +1,8 @@
 <template>
   <Block section-title="圖表分析" icon-name="chart-bar">
-    <img src="assets/chart.png">
+    <div class="flex justify-center">
+      <img src="@/assets/chart.png">
+    </div>
   </Block>
 </template>
 
