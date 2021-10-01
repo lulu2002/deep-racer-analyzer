@@ -26,6 +26,7 @@ import FileUpload from "@/components/block/FileUpload";
 import ModelInfo from "@/components/block/ModelInfo";
 import Tools from "@/components/block/Tools";
 import About from "@/components/block/About";
+import App from "@/logic/App.ts";
 
 export default {
   name: 'App',
@@ -38,6 +39,11 @@ export default {
     Charts,
     AppView,
     Navbar
+  },
+  data() {
+    return {
+      app: new App()
+    };
   }
 };
 </script>

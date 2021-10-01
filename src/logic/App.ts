@@ -13,7 +13,10 @@ class App {
     async upload(tarGzFile: File) {
         const files = await this.fileManager.unPackFile(tarGzFile)
         const reader = this.readingManager.loadReader(files)
+        const result = this.analyzer.analyze(reader)
 
+        this.database.pushResult(result)
+        this.database.setCurrent(result)
     }
 }
 
