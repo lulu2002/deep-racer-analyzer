@@ -1,4 +1,4 @@
-export class Coords {
+class Coords {
 
     public x: number;
     public y: number;
@@ -8,3 +8,5 @@ export class Coords {
         this.y = y;
     }
 }
+
+export default Coords

@@ -1,4 +1,4 @@
-export interface Step {
+interface Step {
     episode: number;
     steps: number;
     X: number;
@@ -17,3 +17,5 @@ export interface Step {
     tstamp: number;
     pause_duration: number;
 }
+
+export default Step

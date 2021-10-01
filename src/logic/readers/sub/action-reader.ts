@@ -1,8 +1,9 @@
 import {LogReader} from './reader';
-import {UnZippedFile} from "../../data-objects/UnZippedFile";
-import {ActionSpace} from "../../data-objects/ActionSpace";
+import UnZippedFile from "../../data-objects/UnZippedFile";
+import ActionSpace from "../../data-objects/ActionSpace";
 
-export class LogActionReader extends LogReader<ActionSpace[]> {
+
+class LogActionReader extends LogReader<ActionSpace[]> {
 
     read(files: UnZippedFile[]): ActionSpace[] {
         try {
@@ -29,3 +30,5 @@ export class LogActionReader extends LogReader<ActionSpace[]> {
     }
 
 }
+
+export default LogActionReader

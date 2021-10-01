@@ -1,12 +1,13 @@
-import {UnZippedFile} from "../data-objects/UnZippedFile";
 import {Reader} from "./sub/reader";
-import {ActionSpace} from "../data-objects/ActionSpace";
-import {Step} from "../data-objects/Step";
-import {HyperParameters} from "../data-objects/HyperParameters";
-import {Metric} from "../data-objects/Metric";
-import {EnvironmentInfo} from "../data-objects/EnvironmentInfo";
+import Step from "../data-objects/Step";
+import ActionSpace from "../data-objects/ActionSpace";
+import UnZippedFile from "../data-objects/UnZippedFile";
+import HyperParameters from "../data-objects/HyperParameters";
+import Metric from "../data-objects/Metric";
+import EnvironmentInfo from "../data-objects/EnvironmentInfo";
 
-export abstract class AnalyticReader {
+
+abstract class AnalyticReader {
 
     private files: UnZippedFile[];
 
@@ -47,3 +48,5 @@ export abstract class AnalyticReader {
     }
 
 }
+
+export default AnalyticReader

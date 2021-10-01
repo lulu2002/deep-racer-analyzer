@@ -1,4 +1,4 @@
-import {UnZippedFile} from "../data-objects/UnZippedFile";
+import UnZippedFile from "../data-objects/UnZippedFile";
 import * as browserUntar from 'browser-untar';
 import * as pako from 'pako/index.js';
 

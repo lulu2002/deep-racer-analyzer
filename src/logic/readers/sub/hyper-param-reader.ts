@@ -1,6 +1,6 @@
 import {LogReader} from './reader';
 import {HyperParameters} from "../../data-objects/HyperParameters";
-import {UnZippedFile} from "../../data-objects/UnZippedFile";
+import UnZippedFile from "../../data-objects/UnZippedFile";
 
 export class LogHyperParamReader extends LogReader<HyperParameters> {
 

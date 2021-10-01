@@ -1,4 +1,4 @@
-import {UnZippedFile} from "../../data-objects/UnZippedFile";
+import UnZippedFile from "../../data-objects/UnZippedFile";
 
 export abstract class Reader<E> {
     public abstract read(files: UnZippedFile[]): E;

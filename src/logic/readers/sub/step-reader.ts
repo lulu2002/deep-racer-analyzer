@@ -1,6 +1,6 @@
 import {LogReader, Reader} from './reader';
-import {UnZippedFile} from "../../data-objects/UnZippedFile";
-import {Step} from "../../data-objects/Step";
+import UnZippedFile from "../../data-objects/UnZippedFile";
+import Step from "../../data-objects/Step";
 
 export class CsvStepReader extends Reader<Step[]> {
 

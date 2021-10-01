@@ -1,4 +1,4 @@
-export class Metric {
+class Metric {
     reward_score: number;
     metric_time: number;
     start_time: number;
@@ -9,3 +9,5 @@ export class Metric {
     completion_percentage: number;
     episode_status: string;
 }
+
+export default Metric

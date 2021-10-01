@@ -1,6 +1,6 @@
 import {LogReader} from './reader';
 import {EnvironmentInfo} from "../../data-objects/EnvironmentInfo";
-import {UnZippedFile} from "../../data-objects/UnZippedFile";
+import UnZippedFile from "../../data-objects/UnZippedFile";
 
 export class LogEnvironmentReader extends LogReader<EnvironmentInfo> {
 

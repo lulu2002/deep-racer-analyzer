@@ -1,6 +1,6 @@
 import {Reader} from './reader';
 import {Metric} from "../../data-objects/Metric";
-import {UnZippedFile} from "../../data-objects/UnZippedFile";
+import UnZippedFile from "../../data-objects/UnZippedFile";
 
 export class JsonMetricsReader extends Reader<Metric[]> {
 

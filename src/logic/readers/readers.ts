@@ -1,10 +1,10 @@
-import {AnalyticReader} from './analytic-reader';
-import {LogActionReader} from './sub/action-reader';
+import AnalyticReader from './analytic-reader';
+import LogActionReader from './sub/action-reader';
 import {CsvStepReader, LogStepReader} from './sub/step-reader';
 import {LogHyperParamReader} from './sub/hyper-param-reader';
 import {EmptyMetricsReader, JsonMetricsReader} from './sub/metrics-reader';
 import {LogEnvironmentReader} from './sub/environment-reader';
-import {UnZippedFile} from "../data-objects/UnZippedFile";
+import UnZippedFile from "../data-objects/UnZippedFile";
 
 export class TrainingAnalyticReader extends AnalyticReader {
 

@@ -1,6 +1,6 @@
 import {TrainingType} from "./EnumTypes";
 
-export interface EnvironmentInfo {
+interface EnvironmentInfo {
     readonly METRICS_S3_BUCKET: string[];
     readonly METRICS_S3_OBJECT_KEY: string[];
     readonly RACER_NAME: string;
@@ -30,3 +30,5 @@ export interface EnvironmentInfo {
     readonly OFF_TRACK_PENALTY: number;
     readonly MODEL_METADATA_FILE_S3_KEY: string[];
 }
+
+export default EnvironmentInfo
