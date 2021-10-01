@@ -16,7 +16,9 @@
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "@vueform/toggle": "^2.0.1",
     "autoprefixer": "^9",
+    "browser-untar": "github:lulu2002/browser-untar",
     "core-js": "^3.6.5",
+    "pako": "^2.0.4",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^3.0.0"
