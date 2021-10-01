@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
 .app-text-desc {
     @apply text-gray-400
 }
 
 .app-text-bold {
-    @apply font-semibold
+    @apply font-medium
 }

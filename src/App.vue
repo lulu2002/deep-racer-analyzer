@@ -8,8 +8,8 @@
       </div>
 
       <div class="w-4/12">
-        <file-upload></file-upload>
-        <model-info></model-info>
+        <file-upload @upload="this.app.upload($event.target.files[0])"/>
+        <model-info :result="currentResult"></model-info>
         <tools></tools>
         <about></about>
       </div>
@@ -44,6 +44,11 @@ export default {
     return {
       app: new App()
     };
+  },
+  computed: {
+    currentResult: function () {
+      return this.app.currentResult;
+    }
   }
 };
 </script>

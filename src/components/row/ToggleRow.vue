@@ -1,5 +1,5 @@
 <template>
-  <row class="flex justify-between px-4">
+  <row class="flex justify-between px-4" :margin-bottom="computeMargin">
     <p class="app-text-bold"> {{ title }} </p>
     <toggle v-model="value"></toggle>
   </row>

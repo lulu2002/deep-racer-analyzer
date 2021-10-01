@@ -1,5 +1,6 @@
 import HyperParameters from "@/logic/data-objects/HyperParameters";
 import EnvironmentInfo from "@/logic/data-objects/EnvironmentInfo";
+import AnalysisResult from "@/logic/data-objects/AnalysisResult";
 
 class Defaults {
 
@@ -27,7 +28,7 @@ class Defaults {
         JOB_TYPE: 'TRAINING',
         VIDEO_JOB_TYPE: 'TRAINING',
         LEADERBOARD_NAME: 'UNKNOWN_LEADERBOARD_NAME',
-        RACE_TYPE: 'UNKNOWN_RACE_TYPE',
+        RACE_TYPE: 'TIME_TRIAL',
         WORLD_NAME: 'reinvent_base',
         MP4_S3_OBJECT_PREFIX: 'UNKNOWN_MP4_S3_OBJECT_PREFIX',
         MODEL_S3_PREFIX: [],
@@ -48,8 +49,17 @@ class Defaults {
         IS_CONTINUOUS: false,
         OFF_TRACK_PENALTY: -1,
         MODEL_METADATA_FILE_S3_KEY: [],
+        SENSOR: 'FRONT_FACING_CAMERA'
     }
 
+
+    static DEFAULT_RESULT: AnalysisResult = {
+        actionSpaces: [],
+        environmentInfo: Defaults.EMPTY_ENVIRONMENT,
+        hyperParams: Defaults.DEFAULT_HYPER_PARAMS,
+        steps: [],
+        episodes: []
+    }
 }
 
 export default Defaults

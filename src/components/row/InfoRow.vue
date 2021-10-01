@@ -1,5 +1,5 @@
 <template>
-  <row>
+  <row :margin-bottom="computeMargin">
     <div class="w-4/12 pl-3">
       <p class="app-text-bold"> {{ k }}</p>
     </div>

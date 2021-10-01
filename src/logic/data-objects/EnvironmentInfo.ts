@@ -1,4 +1,4 @@
-import {TrainingType} from "./EnumTypes";
+import {RaceType, SensorType, TrainingType} from "./EnumTypes";
 
 interface EnvironmentInfo {
     readonly METRICS_S3_BUCKET: string[];
@@ -8,7 +8,7 @@ interface EnvironmentInfo {
     readonly JOB_TYPE: TrainingType;
     readonly VIDEO_JOB_TYPE: TrainingType;
     readonly LEADERBOARD_NAME: string;
-    readonly RACE_TYPE: string;
+    readonly RACE_TYPE: RaceType;
     readonly WORLD_NAME: string;
     readonly MP4_S3_OBJECT_PREFIX: string;
     readonly MODEL_S3_PREFIX: string[];
@@ -29,6 +29,7 @@ interface EnvironmentInfo {
     readonly IS_CONTINUOUS: boolean;
     readonly OFF_TRACK_PENALTY: number;
     readonly MODEL_METADATA_FILE_S3_KEY: string[];
+    readonly SENSOR: SensorType
 }
 
 export default EnvironmentInfo

@@ -20,6 +20,10 @@ class App {
 
         console.log(result)
     }
+
+    get currentResult() {
+        return this.database.getCurrent()
+    }
 }
 
 export default App

@@ -5,9 +5,9 @@
         <i class="las la-upload la-2x" style="color: #E11CC2"></i>
       </div>
 
-      <div class="ml-3.5">
-        <input type="file">
-        <p class="font-semibold">點我上傳檔案</p>
+      <div class="ml-3.5" @click="$refs.input.click()">
+        <input type="file" hidden ref="input" @change="onFileChange($event)">
+        <p class="font-medium">點我上傳檔案</p>
         <p class="app-text-desc">檔案大小: 20M | 上傳進度: 100%</p>
       </div>
     </div>
@@ -20,8 +20,11 @@ import Block from "@/components/Block";
 export default {
   name: "FileUpload",
   components: {Block},
-  emits: {
-    upload: null
+  emits: ["upload"],
+  methods: {
+    onFileChange(event) {
+      this.$emit("upload", event);
+    }
   }
 };
 </script>

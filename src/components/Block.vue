@@ -6,7 +6,7 @@
             :icon-name="iconName"
             :bg-color="color"
             class="mr-4"/>
-        <p class="text-xl font-semibold">{{ this.sectionTitle }}</p>
+        <p class="font-medium text-xl">{{ this.sectionTitle }}</p>
       </div>
       <div class="border-t w-full"></div>
       <div class="px-5 py-4">

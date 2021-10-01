@@ -1,9 +1,10 @@
 import AnalysisResult from "../data-objects/AnalysisResult";
+import Defaults from "@/logic/data-objects/Defaults";
 
 class Database {
 
     private history: AnalysisResult[] = []
-    private current: AnalysisResult | undefined = undefined
+    private current: AnalysisResult = Defaults.DEFAULT_RESULT
 
     pushResult(result: AnalysisResult) {
         this.history.push(result)
@@ -11,6 +12,10 @@ class Database {
 
     setCurrent(result: AnalysisResult) {
         this.current = result
+    }
+
+    getCurrent() {
+        return this.current
     }
 }
 
