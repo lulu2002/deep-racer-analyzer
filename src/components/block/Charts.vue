@@ -8,24 +8,29 @@
     </div>
 
     <template v-slot:header-right>
-      <button @click="showingChart = 'THROTTLE'">車速分佈</button>
-      <button @click="showingChart = 'REWARD'">獎勵分佈</button>
+      <button @click="showingChart = 'THROTTLE'">車速</button>
+      <button @click="showingChart = 'REWARD'">獎勵</button>
+      <button @click="showingChart = 'REWARD'">速度分佈</button>
       <button @click="showingChart = 'TRAINING'">訓練狀況</button>
-      <button @click="showingChart = 'ACTION_SPACE'">ActionSpace 設定</button>
+      <button @click="showingChart = 'ACTION_SPACE'">設定</button>
     </template>
   </Block>
 </template>
 <script>
 import Block from "@/components/Block";
 import TestChart from "@/components/block/charts/TestChart";
-import Database from "@/logic/sub-logic/Database";
-
+import App from "@/logic/App";
 
 export default {
   name: "Charts",
   components: {TestChart, Block},
   props: {
-    database: Database
+    app: App
+  },
+  computed: {
+    database: function () {
+      return this.app.db;
+    }
   },
   data() {
     return {

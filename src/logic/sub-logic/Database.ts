@@ -1,11 +1,13 @@
 import AnalysisResult from "../data-objects/AnalysisResult";
 import Defaults from "@/logic/data-objects/Defaults";
 import Episode from "@/logic/data-objects/Episode";
+import Track from "@/logic/data-objects/Track";
 
 class Database {
 
     private history: AnalysisResult[] = []
     private current: AnalysisResult = Defaults.DEFAULT_RESULT
+    private trackCache: Track[] = []
 
     currentEpisode: Episode = Defaults.DEFAULT_EPISODE
 
@@ -15,6 +17,10 @@ class Database {
 
     setCurrent(result: AnalysisResult) {
         this.current = result
+    }
+
+    uploadTrack(track: Track) {
+        this.trackCache.push(track)
     }
 
     getCurrent() {
