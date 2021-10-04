@@ -6,12 +6,13 @@ import * as NpyJs from 'npyjs/index.js';
 class TrackLoader {
 
     public isTrackSupported(track: string): boolean {
-        return fetch(`assets/tracks/${track}.npy`) != null;
+        throw Error("Not impl")
     }
 
     public loadTrackByName(track: string): Promise<Track> {
         // @ts-ignore
-        return new NpyJs().load(`assets/tracks/${track}.npy`).then(array => {
+        return new NpyJs().load(`/tracks/${track}.npy`).then(array => {
+            console.log(array)
             const trackData: number[] = array.data;
 
             const insideBorders: Coords[] = [];
