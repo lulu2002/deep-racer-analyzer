@@ -60,15 +60,6 @@ export default {
     result: AnalysisResult
   },
   computed: {
-    fancyJobTypeName: function () {
-      switch (this.environment.JOB_TYPE) {
-        case "EVALUATION":
-          return "評估 (Evaluation)";
-        case "TRAINING":
-          return "訓練 (Training)";
-      }
-      return "未知";
-    },
     environment: function () {
       return this.result.environmentInfo;
     },

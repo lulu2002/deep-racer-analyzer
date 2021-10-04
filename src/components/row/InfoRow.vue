@@ -4,7 +4,7 @@
       <slot name="icon"/>
       <p class="app-text-bold"> {{ k }}</p>
     </div>
-    <div class="w-7/12 app-text-bold text-left">
+    <div class="w-7/12 app-text-bold text-left break-all">
       <slot name="row-value"></slot>
     </div>
   </row>
