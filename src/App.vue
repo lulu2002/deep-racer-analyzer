@@ -3,7 +3,7 @@
     <navbar></navbar>
     <app-view>
       <div class="w-8/12">
-        <charts></charts>
+        <charts :database="app.db"></charts>
         <episodes></episodes>
       </div>
 

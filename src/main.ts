@@ -6,6 +6,7 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 import {library} from "@fortawesome/fontawesome-svg-core";
 import {faChartBar, faChartPie, faCog, faInfo, faUpload, faUser} from "@fortawesome/free-solid-svg-icons";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
+import {Chart, registerables} from 'chart.js';
 
 library.add(faChartBar);
 library.add(faChartPie);
@@ -14,6 +15,8 @@ library.add(faCog);
 library.add(faInfo);
 library.add(faUpload);
 library.add(faGithub);
+
+Chart.register(...registerables)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

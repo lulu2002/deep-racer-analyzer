@@ -1,6 +1,7 @@
 import HyperParameters from "@/logic/data-objects/HyperParameters";
 import EnvironmentInfo from "@/logic/data-objects/EnvironmentInfo";
 import AnalysisResult from "@/logic/data-objects/AnalysisResult";
+import Episode from "@/logic/data-objects/Episode";
 
 class Defaults {
 
@@ -59,6 +60,10 @@ class Defaults {
         hyperParams: Defaults.DEFAULT_HYPER_PARAMS,
         steps: [],
         episodes: []
+    }
+
+    static DEFAULT_EPISODE: Episode = {
+        steps: []
     }
 }
 

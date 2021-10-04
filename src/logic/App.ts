@@ -35,6 +35,10 @@ class App {
     get analysingState() {
         return this.state
     }
+
+    get db() {
+        return this.database
+    }
 }
 
 export default App
