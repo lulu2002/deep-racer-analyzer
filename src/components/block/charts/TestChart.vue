@@ -26,8 +26,8 @@ export default {
         labels: [],
         datasets: [
           {
-            data: this.trackArray,
             label: "邊界",
+            data: this.trackArray,
             backgroundColor: ['#acacae'],
             pointRadius: 0,
             showLine: true
