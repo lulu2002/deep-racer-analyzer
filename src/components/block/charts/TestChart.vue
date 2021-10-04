@@ -1,27 +1,77 @@
 <template>
-  <LineChart :chartData="data" class="w-full"/>
+  <ScatterChart
+      ref="scatterChart"
+      :chartData="data"
+      :options="options"
+      class="w-full"
+      style="height: 500px"
+  />
 </template>
 
 <script>
-import {LineChart} from 'vue-chart-3';
+import {ScatterChart} from 'vue-chart-3';
 import Episode from "@/logic/data-objects/Episode";
+import Track from "@/logic/data-objects/Track";
 
 export default {
   name: "TestChart",
-  components: {LineChart},
+  components: {ScatterChart},
   props: {
-    episode: Episode
+    episode: Episode,
+    track: Track
   },
   computed: {
     data: function () {
       return {
-        labels: this.episode.steps.map((value, index) => index),
+        labels: [],
         datasets: [
           {
-            data: this.episode.steps.map((value, index) => index),
-            backgroundColor: ['#77CEFF'],
+            data: this.trackArray,
+            label: "邊界",
+            backgroundColor: ['#acacae'],
+            pointRadius: 0,
+            showLine: true
           },
-        ],
+          {
+            label: "路徑",
+            data: this.episode.steps.map(it => {
+              return {
+                x: it.X,
+                y: it.Y
+              };
+            }),
+            backgroundColor: ['#5757ac'],
+          }
+        ]
+      };
+    },
+    trackArray: function () {
+      if (this.track != null)
+        return [
+          ...this.track.humanBestRoute,
+          ...this.track.insideBorder,
+          ...this.track.outsideBorder,
+        ];
+
+      return [];
+    },
+    options: function () {
+      return {
+        animation: {
+          duration: 0
+        },
+        scales: {
+          x: {
+            ticks: {
+              stepSize: 0.5
+            }
+          },
+          y: {
+            ticks: {
+              stepSize: 0.5
+            }
+          },
+        }
       };
     }
   },

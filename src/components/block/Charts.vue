@@ -1,10 +1,11 @@
 <template>
   <Block section-title="圖表分析" icon-name="chart-bar">
     <div class="flex justify-center">
-      <test-chart v-if="showingChart === 'THROTTLE'" :episode="database.currentEpisode"/>
-      <test-chart v-if="showingChart === 'REWARD'" :episode="database.currentEpisode"/>
-      <test-chart v-if="showingChart === 'TRAINING'" :episode="database.currentEpisode"/>
-      <test-chart v-if="showingChart === 'ACTION_SPACE'" :episode="database.currentEpisode"/>
+      <test-chart
+          v-if="showingChart === 'THROTTLE'"
+          :episode="database.currentEpisode"
+          :track="database.getTrack(app.currentResult.environmentInfo.WORLD_NAME)"
+      />
     </div>
 
     <template v-slot:header-right>

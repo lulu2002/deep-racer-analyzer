@@ -1,5 +1,7 @@
 <template>
-  <block section-title="Episodes" icon-name="chart-pie"></block>
+  <block section-title="Episodes" icon-name="chart-pie">
+
+  </block>
 </template>
 
 <script>

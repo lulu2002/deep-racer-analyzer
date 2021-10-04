@@ -17,10 +17,15 @@ class Database {
 
     setCurrent(result: AnalysisResult) {
         this.current = result
+        this.currentEpisode = result.episodes[0]
     }
 
     uploadTrack(track: Track) {
         this.trackCache.push(track)
+    }
+
+    getTrack(name: string) {
+        return this.trackCache.find(value => value.name === name)
     }
 
     getCurrent() {
