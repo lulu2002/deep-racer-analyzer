@@ -6,6 +6,15 @@
       class="w-full"
       style="height: 500px"
   />
+  <div>
+    <vue-final-modal v-model="showModal" classes="modal-container" content-class="modal-content">
+      <span class="modal__title">Hello, vue-final-modal</span>
+    </vue-final-modal>
+
+    <v-button @click="showModal = true">
+      Open modal
+    </v-button>
+  </div>
 </template>
 
 <script>
@@ -19,6 +28,11 @@ export default {
   props: {
     episode: Episode,
     track: Track
+  },
+  data() {
+    return {
+      showModal: false,
+    };
   },
   computed: {
     data: function () {
