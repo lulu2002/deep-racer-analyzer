@@ -12,7 +12,6 @@ class TrackLoader {
     public loadTrackByName(track: string): Promise<Track> {
         // @ts-ignore
         return new NpyJs().load(`/tracks/${track}.npy`).then(array => {
-            console.log(array)
             const trackData: number[] = array.data;
 
             const insideBorders: Coords[] = [];

@@ -41,7 +41,7 @@ export default {
     Episodes,
     Charts,
     AppView,
-    Navbar
+    Navbar,
   },
   data() {
     return {
