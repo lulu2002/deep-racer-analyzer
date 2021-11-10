@@ -25,7 +25,8 @@
     "vue": "^3.0.0",
     "vue-chart-3": "^0.5.8",
     "vue-class-component": "^8.0.0-0",
-    "vue-final-modal": "^3.4.2"
+    "vue-final-modal": "^3.4.2",
+    "vue3-table-lite": "^1.0.8"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.18.0",

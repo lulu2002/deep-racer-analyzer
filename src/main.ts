@@ -9,7 +9,6 @@ import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import {Chart, registerables} from 'chart.js';
 import vfmPlugin from 'vue-final-modal'
 
-
 library.add(faChartBar);
 library.add(faChartPie);
 library.add(faUser);

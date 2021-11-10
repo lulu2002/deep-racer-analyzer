@@ -3,8 +3,8 @@
     <navbar></navbar>
     <app-view>
       <div class="w-8/12">
-        <charts :app="app"></charts>
-        <episodes></episodes>
+        <charts :app="app"/>
+        <episodes :app="app"/>
       </div>
 
       <div class="w-4/12">

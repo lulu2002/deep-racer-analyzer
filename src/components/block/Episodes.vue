@@ -2,7 +2,7 @@
   <block section-title="Episodes" icon-name="chart-pie">
     <div>
       <vue-final-modal v-model="showModal" classes="modal-container">
-        <episode-selector/>
+        <episode-selector :app="app"/>
       </vue-final-modal>
       <v-button @click="showModal = true">Open modal</v-button>
     </div>
@@ -19,6 +19,7 @@
 import Block from "@/components/Block";
 import {VueFinalModal} from "vue-final-modal";
 import EpisodeSelector from "@/components/block/EpisodeSelector";
+import App from "@/logic/App";
 
 export default {
   name: "Episodes",
@@ -26,6 +27,9 @@ export default {
     EpisodeSelector,
     Block,
     VueFinalModal
+  },
+  props: {
+    app: App
   },
   data() {
     return {
